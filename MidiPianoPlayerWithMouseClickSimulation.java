@@ -7,78 +7,6 @@ import javax.swing.*;
 import java.awt.event.KeyAdapter;
 
 public class MidiPianoPlayerWithMouseClickSimulation {
-    // X coordinates for the white keys
-	/*
-	 private static final int[] WHITE_KEYS_X_COORDINATES = {
-	        270, 290, 310, 330, 350, 370, 390, 410, 420, 440, 460, 475, 495, 515, 530, 550, 570, 590, 610, 620, 640, 660, 680, 700, 720, 740
-	    };
-	    
-	    // Y coordinates for white and black keys
-	    private static final int WHITE_KEY_Y = 420;
-	*/
-	/*
-	private static final int[] WHITE_KEYS_X_COORDINATES = {
-        55, 77, 99, 121, 143, 165, 187, 209, 231, 253, 275, 297,
-        319, 341, 363, 385, 407, 429, 451, 473, 495, 517, 539, 561,
-        583, 605, 627, 649, 671, 693, 715, 737, 759, 781, 803, 825,
-        847, 869, 891, 913, 935, 957, 979, 1001, 1023, 1045, 1067,
-        1089, 1111, 1133, 1155, 1177, 1199, 1221, 1243, 1265
-    };
-
-    // X coordinates for the black keys
-    private static final int[] BLACK_KEYS_X_COORDINATES = {
-        70, 90, 133, 155, 177, 225, 245, 288, 310, 332, 380, 400,
-        442, 464, 486, 535, 555, 600, 622, 644, 690, 710, 750, 772,
-        794, 842, 862, 905, 927, 949, 1000, 1020, 1060, 1082, 1104,
-        1150, 1170, 1215, 1237, 1259
-    };
-    
-    // Y coordinates for white and black keys
-    private static final int WHITE_KEY_Y = 511;
-    private static final int BLACK_KEY_Y = 480;
-    */
-
-	/*
-	private static final int[] WHITE_KEYS_X_COORDINATES = {
-        656, 606, 706, 556, 756, 506, 806, 456, 856, 406, 906, 356, 956, 306, 1006, 256, 1056
-    };
-	
-	private static final int WHITE_KEY_Y = 500;
-	*/
-	/*
-		private static final int[] WHITE_KEYS_X_COORDINATES = {
-	        393, 483, 573, 663, 753, 843, 933,
-	        393, 483, 573, 663, 753, 843, 933,
-	        393, 483, 573, 663, 753, 843, 933
-			328, 448, 568, 686, 806, 922, 1040,
-			328, 448, 568, 686, 806, 922, 1040,
-			328, 448, 568, 686, 806, 922, 1040
-	    };
-		
-		private static final int[] WHITE_KEY_Y = { 
-			660, 660, 660, 660, 660, 660, 660,
-			570, 570, 570, 570, 570, 570, 570,
-			480, 480, 480, 480, 480, 480, 480
-		};
-		
-		private static final int[] WHITE_KEY_Y = { 
-				680, 680, 680, 680, 680, 680, 680,
-				580, 580, 580, 580, 580, 580, 580,
-				480, 480, 480, 480, 480, 480, 480
-			};
-	*/
-	
-	/*
-	private static final int[] WHITE_KEYS_X_COORDINATES = {
-	    670, 603, 737, 536, 804, 469, 871, 402, 938, 335, 1005, 268, 1072, 201, 1139, 134, 1206
-	};
-		
-	private static final int WHITE_KEY_Y = 150;
-	*/
-	
-	//https://recursivearts.com/virtual-piano/	
-	//35 25 126 30 138 35 650 500
-	
 	private static final int WHITE_KEY_COUNT = 35;
 	private static final int BLACK_KEY_COUNT = 25;
 
@@ -92,69 +20,9 @@ public class MidiPianoPlayerWithMouseClickSimulation {
 	private static final int[] BLACK_KEYS_X_COORDINATES = new int[BLACK_KEY_COUNT];
 
 	// Y coordinates for white and black keys
-    private static final int WHITE_KEY_Y = 300;
-    private static final int BLACK_KEY_Y = 200;
-    
-	/*
-	private static final int WHITE_KEY_COUNT = 49;
-	private static final int BLACK_KEY_COUNT = 35;
-
-	private static final int FIRST_WHITE_KEY_X = 104; // X position of the first white key
-	private static final int WHITE_KEY_SPACING = 24; // Distance between white keys
-
-	private static final int FIRST_BLACK_KEY_X = 115; // X position of the first black key
-	private static final int BLACK_KEY_SPACING = 25; // Approximate spacing for black keys
-
-	private static final int[] WHITE_KEYS_X_COORDINATES = new int[WHITE_KEY_COUNT];
-	private static final int[] BLACK_KEYS_X_COORDINATES = new int[BLACK_KEY_COUNT];
-
-	// Y coordinates for white and black keys
-    private static final int WHITE_KEY_Y = 460;
-    private static final int BLACK_KEY_Y = 360;
-    */
-	
-	 //https://virtualpiano.net/ 35 25 47 35 66 34 530 450
-	 //https://openclassroom.edu.vn/virtualpiano/ 35 25 66 34 82 34 300 200 
-	 //https://recursivearts.com/virtual-piano/	
-    //https://multiplayerpiano.com/ 49 35 104 24 115 25 460 360
-	//21 15 291 38 313 35 510 475  
-	/*
-	private static final int WHITE_KEY_COUNT = 17;
-	private static final int BLACK_KEY_COUNT = 15;
-
-	private static final int FIRST_WHITE_KEY_X = 255; // X position of the first white key
-	private static final int WHITE_KEY_SPACING = 51; // Distance between white keys
-
-	private static final int FIRST_BLACK_KEY_X = 125; // X position of the first black key
-	private static final int BLACK_KEY_SPACING = 25; // Approximate spacing for black keys
-
-	private static final int[] WHITE_KEYS_X_COORDINATES = new int[WHITE_KEY_COUNT];
-	private static final int[] BLACK_KEYS_X_COORDINATES = new int[BLACK_KEY_COUNT];
-
-	// Y coordinates for white and black keys
-    private static final int WHITE_KEY_Y = 455;
-    private static final int BLACK_KEY_Y = 200;
-    */
-	//42 30 59 29 75 29 510 470
-	//14 10 268 37 286 37 530 450
-	/*
-	private static final int WHITE_KEY_COUNT = 14;
-	private static final int BLACK_KEY_COUNT = 10;
-
-	private static final int FIRST_WHITE_KEY_X = 295; // X position of the first white key
-	private static final int WHITE_KEY_SPACING = 32; // Distance between white keys
-
-	private static final int FIRST_BLACK_KEY_X = 311; // X position of the first black key
-	private static final int BLACK_KEY_SPACING = 32; // Approximate spacing for black keys
-
-	private static final int[] WHITE_KEYS_X_COORDINATES = new int[WHITE_KEY_COUNT];
-	private static final int[] BLACK_KEYS_X_COORDINATES = new int[BLACK_KEY_COUNT];
-
-	// Y coordinates for white and black keys
-    private static final int WHITE_KEY_Y = 680;
-    private static final int BLACK_KEY_Y = 650;
-	*/
-    
+	private static final int WHITE_KEY_Y = 300;
+	private static final int BLACK_KEY_Y = 200;
+   
 	static {
 	    // Generate white key positions
 	    for (int i = 0; i < WHITE_KEY_COUNT; i++) {
@@ -165,7 +33,7 @@ public class MidiPianoPlayerWithMouseClickSimulation {
 	    
 	    // Generate black key positions
 	    for (int i = 1; i < BLACK_KEY_COUNT; i++) {
-	                                                                                                                //BLACK_KEYS_X_COORDINATES[i] = FIRST_BLACK_KEY_X + (i / 5) * (BLACK_KEY_SPACING * 2) + (i % 5) * BLACK_KEY_SPACING;
+                //BLACK_KEYS_X_COORDINATES[i] = FIRST_BLACK_KEY_X + (i / 5) * (BLACK_KEY_SPACING * 2) + (i % 5) * BLACK_KEY_SPACING;
 	    	if ((i % 5 == 2) || (i % 5 == 0)) {
 	    		BLACK_KEYS_X_COORDINATES[i] = BLACK_KEYS_X_COORDINATES[i - 1] + BLACK_KEY_SPACING * 2;
 	    	} else {
@@ -203,26 +71,7 @@ public class MidiPianoPlayerWithMouseClickSimulation {
     }
     
     public static void main(String[] args) {
-        /*
-         * String midiFilePath = "E:\\Among us\\Để tôi ôm em bằng giai điệu này - Có hẹn với thanh xuân.mid";
-    	 * Phố đã lên đèn.mid Grand_Escape-Weathering_With_You-Tenki_no_Ko.mid id_072019.mid 60282_you-dian-tian.mid 
-         * Anh thanh niên.mid Love_Story_Taylors_Version.mid your smile.mid Phố đã lên đèn.mid
-    	 * NOTHING_GONNA_CHANGE_MY_LOVE_FOR_YOU.mid Yêu đơn phương là gì.mid 今はいいんだよ_–_MIMI.mid For Ya - 蒋小呢.mid 
-    	 * Công_Chúa_Bong_Bóng.mid Hạ còn vương nắng.mid 白月光與朱砂痣_bach nguyet quang va not chu sa.mid
-    	 * Kẹo Bông Gòn.mid Ngày Tết quê em.mid Nothin on me.mid Tháng_Tư_Là_Lời_Nói_Dối_Của_Em.mid
-    	 * fiona_fung_proud_of_you.mid 
-    	 * What_Makes_You_Beautiful_-_One_Direction_for_solo_piano.mid
-    	 * Kawaikute_Gomen.mid Em yêu trường em.mid 我愿意平凡的陪在你身旁 - Em nguyện làm một người bình thường ở bên cạnh anh.mid
-    	 * Sekai_Wa_Koi_Ni_Ochiteiru_-_Ao_Haru_Ride_OP.mid
-    	 * Yume wo Kanaete.mid
-    	 * Rồi Em Sẽ Gặp Một Chàng Trai Khác.mid
-    	 * When_Can_I_See_You_Again_-_Owl_City.mid 
-    	 * way_back_home.mid
-    	 *   回到夏天.mid
-    	 */
-
-        //String midiFilePath = "C:\\Users\\Nghia\\Downloads\\An_Enigmatic_Encounter.mid";
-    	String midiFilePath = "E:\\MidiFile\\Kawaikute_Gomen.mid";
+    	String midiFilePath = "...\\.mid";
     	
         File midiFile = new File(midiFilePath);
 
@@ -249,19 +98,7 @@ public class MidiPianoPlayerWithMouseClickSimulation {
                     if (message instanceof ShortMessage) {
                         ShortMessage sm = (ShortMessage) message;
                         if (sm.getCommand() == ShortMessage.NOTE_ON && sm.getChannel() != 9) {
-                            // Mute all channels except percussion (Channel 10 is typically percussion)              	
-                        	/*// 21 D# || 22 23 || 24 C || 25 F# || 26 F || 27 E || 28 Nothin on me || 29 G
-                        	 *   -36
-    	                                
-    	                         -21    C = 0, 7, 14, 21, ... (for C2, C3, C4, etc.)
-    									D = 2, 9, 16, 23, ... (for D2, D3, D4, etc.)
-    									E = 4, 11, 18, 25, ... (for E2, E3, E4, etc.)
-    									F = 5, 12, 19, 26, ... (for F2, F3, F4, etc.)
-    									G = 7, 14, 21, 28, ... (for G2, G3, G4, etc.)
-    									A = 9, 16, 23, 30, ... (for A2, A3, A4, etc.)
-    									B = 11, 18, 25, 32, ... (for B2, B3, B4, etc.)
-    									// -24
-    									*/
+                            // Mute all channels except percussion (Channel 10 is typically percussion)              	    	
                             int key = sm.getData1() + 14;
                             int velocity = sm.getData2();
                             if (velocity > 0) {
